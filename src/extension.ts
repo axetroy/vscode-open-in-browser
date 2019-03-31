@@ -20,10 +20,12 @@ async function setContext(editor: vscode.TextEditor | void) {
 export async function activate(context: vscode.ExtensionContext) {
   await setContext(vscode.window.activeTextEditor);
 
-  vscode.window.onDidChangeActiveTextEditor(
-    async (editor: vscode.TextEditor | void) => {
-      await setContext(editor);
-    }
+  context.subscriptions.push(
+    vscode.window.onDidChangeActiveTextEditor(
+      async (editor: vscode.TextEditor | void) => {
+        await setContext(editor);
+      }
+    )
   );
 
   context.subscriptions.push(
@@ -88,5 +90,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
 // this method is called when your extension is deactivated
 export function deactivate(context: vscode.ExtensionContext) {
-  //
+  for (const subscription of context.subscriptions) {
+    subscription.dispose();
+  }
 }
