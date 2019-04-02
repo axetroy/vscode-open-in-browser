@@ -69,6 +69,7 @@ export async function activate(context: vscode.ExtensionContext) {
           browsers.map(v => {
             return {
               label: firstUpperCase(v.name) + " " + (v.version || ""),
+              description: "",
               detail: v.command,
               name: v.name,
               command: v.command,
