@@ -8,26 +8,7 @@ function firstUpperCase(str: string) {
   });
 }
 
-async function setContext(editor: vscode.TextEditor | void) {
-  const languageId = editor ? editor.document.languageId : "";
-  await vscode.commands.executeCommand(
-    "setContext",
-    "currentResourceLangId",
-    languageId
-  );
-}
-
 export async function activate(context: vscode.ExtensionContext) {
-  await setContext(vscode.window.activeTextEditor);
-
-  context.subscriptions.push(
-    vscode.window.onDidChangeActiveTextEditor(
-      async (editor: vscode.TextEditor | void) => {
-        await setContext(editor);
-      }
-    )
-  );
-
   context.subscriptions.push(
     vscode.commands.registerCommand("open.inEditorMenu", async () => {
       const editor = vscode.window.activeTextEditor;
@@ -62,8 +43,6 @@ export async function activate(context: vscode.ExtensionContext) {
             resolve(launch.browsers.local);
           });
         });
-
-        console.log(browsers);
 
         const browser = await vscode.window.showQuickPick(
           browsers.map(v => {

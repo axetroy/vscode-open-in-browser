@@ -25,7 +25,6 @@
   "icon": "resources/icon.png",
   "main": "./out/index.js",
   "activationEvents": [
-    "onLanguage:html",
     "onCommand:open.inDefaultBrowser",
     "onCommand:open.inSpecifyBrowser",
     "onCommand:open.inEditorMenu"
@@ -81,7 +80,7 @@
         {
           "command": "open.inEditorMenu",
           "group": "navigation@1",
-          "when": "currentResourceLangId == html"
+          "when": "editorLangId == html"
         }
       ],
       "editor/title/context": [
