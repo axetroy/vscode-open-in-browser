@@ -2,7 +2,7 @@
   "name": "vscode-open-in-browser",
   "displayName": "Open in browser",
   "description": "Open html file in browser",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "axetroy",
   "engines": {
     "vscode": "^1.21.0"
