@@ -9,3 +9,5 @@ tslint.json
 *.gif
 *.log
 node_modules
+.travis.yml
+screenshot/*
