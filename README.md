@@ -1,5 +1,7 @@
 # vscode-open-in-browser
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/vscode-open-in-browser.svg)](https://greenkeeper.io/)
+
 An vscode extension to open html file in your browser.
 
 ## [CHANGELOG](https://github.com/axetroy/vscode-open-in-browser/blob/master/CHANGELOG.md)
