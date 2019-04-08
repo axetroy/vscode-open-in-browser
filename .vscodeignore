@@ -11,3 +11,4 @@ tslint.json
 node_modules
 .travis.yml
 screenshot/*
+renovate.json
