@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/axetroy/vscode-open-in-browser.svg?branch=master)](https://travis-ci.com/axetroy/vscode-open-in-browser)
 [![Version](https://vsmarketplacebadge.apphb.com/version/axetroy.vscode-open-in-browser.svg)](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-open-in-browser)
 [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/axetroy.vscode-open-in-browser.svg)](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-open-in-browser)
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
@@ -5,7 +6,7 @@
 
 # vscode-open-in-browser
 
-An vscode extension to open `html` file in your browser for better experience.
+An vscode extension to open `HTML` file in your browser for better experience.
 
 ## Feature
 
