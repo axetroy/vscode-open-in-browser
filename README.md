@@ -5,7 +5,30 @@
 
 # vscode-open-in-browser
 
-An vscode extension to open html file in your browser.
+An vscode extension to open `html` file in your browser for better experience.
+
+## Feature
+
+- [x] Open in default browser
+- [x] Open in specify browser which you have installed
+- [x] Localization support
+
+## How to usage
+
+If you have already opened the `HTML` file in current editor.
+
+You can use it in the following way
+
+- [x] Open from `Resource Explorer`
+- [x] Open from `Editor Menu`
+- [x] Open from `Editor Context`
+- [x] Open from `Command`
+
+## Screenshot
+
+![1](https://github.com/axetroy/vscode-open-in-browser/raw/master/screenshot/1.png)
+![2](https://github.com/axetroy/vscode-open-in-browser/raw/master/screenshot/2.png)
+![3](https://github.com/axetroy/vscode-open-in-browser/raw/master/screenshot/3.png)
 
 ## [CHANGELOG](https://github.com/axetroy/vscode-open-in-browser/blob/master/CHANGELOG.md)
 

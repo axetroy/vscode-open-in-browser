@@ -98,11 +98,11 @@
       "commandPalette": [
         {
           "command": "open.inDefaultBrowser",
-          "when": "never"
+          "when": "editorLangId == html"
         },
         {
           "command": "open.inSpecifyBrowser",
-          "when": "never"
+          "when": "editorLangId == html"
         },
         {
           "command": "open.inEditorMenu",
