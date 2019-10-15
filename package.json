@@ -135,6 +135,6 @@
   },
   "dependencies": {
     "browser-launcher": "^1.0.1",
-    "open": "^6.0.0"
+    "open": "^7.0.0"
   }
 }
